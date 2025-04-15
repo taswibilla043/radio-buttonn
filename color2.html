@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Radio Button Background Change</title>
+</head>
+<body>
+  <h1><center>CHOOSE THE COLOR:</center></h1><br><br>
+  <center>
+  <input type="radio" id="red" name="color" value="red"> Red  
+  <input type="radio" id="green" name="color" value="green"> Green  
+  <input type="radio" id="blue" name="color" value="blue"> Blue 
+  <input type="radio" id="pink" name="color" value="pink">pink 
+  </center>
+
+  <script>
+    // Get all radio buttons
+    const redRadio = document.getElementById('red');
+    const greenRadio = document.getElementById('green');
+    const blueRadio = document.getElementById('blue');
+    const pinkRadio = document.getElementById('pink');
+
+    redRadio.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.style.backgroundColor = 'red';
+      }
+    });
+
+    greenRadio.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.style.backgroundColor = 'green';
+      }
+    });
+
+    blueRadio.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.style.backgroundColor = 'blue';
+      }
+    });
+    pinkRadio.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.style.backgroundColor = 'pink';
+      }
+    });
+  </script>
+
+</body>
+</html>
